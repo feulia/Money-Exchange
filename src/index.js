@@ -21,7 +21,7 @@ module.exports = function makeExchange(currency) {
   }
 
   function getAmount(type) {
-    return Math.round(currency / type);
+    return Math.floor(currency / type);
   }
 
   function decreaseCurrencyBy(type) {
